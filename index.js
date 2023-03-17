@@ -19,7 +19,7 @@ app.use(credentials);
 app.use(cors(corsOptions));
 
 //build-in middleware to handle url encoded data
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 // parse application json
 app.use(express.json());
 
